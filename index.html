@@ -1,6 +1,9 @@
 <html>
 <head>
-<script>
+  <link href="https://raw.githubusercontent.com/acoti/articulate.js/master/articulate.js">
+</head>
+<body>
+  <script>
   function speak(obj) {
   $(obj).articulate('speak');
 };
@@ -17,8 +20,6 @@ function stop() {
   $().articulate('stop');
 };
   </script>
-</head>
-<body>
 <div class="articulate-area">
   <button onclick="speak('section')">Speak All</button>
   <button onclick="pause()">Pause</button>
